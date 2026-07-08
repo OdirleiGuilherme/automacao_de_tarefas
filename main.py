@@ -59,7 +59,8 @@ for line in table.index:
     pyautogui.press('tab')  # Pressiona Tab para ir para o próximo campo
     # obs
     obs = table.loc[line, 'obs']
-    pyautogui.write(str(obs))  # Digita a observação do produto (vazio)
+    if obs != "nan":
+        pyautogui.write(str(obs))  # Digita a observação do produto (vazio)
     pyautogui.press('tab')  # Pressiona Tab para ir para o próximo campo
     
     pyautogui.press('enter')  # Pressiona Enter para cadastrar o produto
