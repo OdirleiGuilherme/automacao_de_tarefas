@@ -6,7 +6,7 @@ import numpy as np
 pyautogui.PAUSE = 1.5
 
 link = 'https://dlp.hashtagtreinamentos.com/python/intensivao/login'
-email = 'odirlei_007@hotmail.com'
+email = 'teste.teste@hotmail.com'
 password = '987654'
 
 pyautogui.press('win')  # Pressiona a tecla Windows
