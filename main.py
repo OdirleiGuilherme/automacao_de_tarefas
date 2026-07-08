@@ -4,6 +4,7 @@ from time import sleep
 import pandas as pd
 import numpy as np
 from dotenv import load_dotenv
+from keyboard import is_pressed
 
 pyautogui.PAUSE = 1.5
 
@@ -34,6 +35,10 @@ pyautogui.press('enter')  # Pressiona Enter para fazer login
 table = pd.read_csv('produtos.csv')
 
 for line in table.index:
+    
+    if keyboard.is_pressed('esc'):
+        print("Programa interrompido pelo usuário.")
+        break
 
     pyautogui.click(x=1811, y=249)  # Clica no botão "Cadastrar Código"
     # código
