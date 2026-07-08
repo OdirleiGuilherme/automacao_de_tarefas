@@ -32,41 +32,36 @@ table = pd.read_csv('produtos.csv')
 
 for line in table.index:
 
-    pyautogui.click(x=1811, y=249)  # Clica no botão "Cadastrar Produto"
+    pyautogui.click(x=1811, y=249)  # Clica no botão "Cadastrar Código"
+    # código
     codigo = table.loc[line, 'codigo']
-    pyautogui.write(codigo)  # Digita o código do produto
+    pyautogui.write(str(codigo))  # Digita o código do produto
     pyautogui.press('tab')  # Pressiona Tab para ir para o próximo campo
-    sleep(1.5)
-
+    # marca
     marca = table.loc[line, 'marca']
-    pyautogui.write(marca)  # Digita a marca do produto
+    pyautogui.write(str(marca))  # Digita a marca do produto
     pyautogui.press('tab')  # Pressiona Tab para ir para o próximo campo
-    sleep(1.5)
-
+    # tipo
     tipo = table.loc[line, 'tipo']
-    pyautogui.write(tipo)  # Digita o tipo do produto
+    pyautogui.write(str(tipo))  # Digita o tipo do produto
     pyautogui.press('tab')  # Pressiona Tab para ir para o próximo campo
-    sleep(1.5)
-
+    # categoria
     categoria = table.loc[line, 'categoria']
-    pyautogui.write(categoria)  # Digita a categoria do produto
+    pyautogui.write(str(categoria))  # Digita a categoria do produto
     pyautogui.press('tab')  # Pressiona Tab para ir para o próximo campo
-    sleep(1.5)
-
+   # preço
     preco_unitario = table.loc[line, 'preco_unitario']
     pyautogui.write(str(preco_unitario))  # Digita o preço unitário do produto
     pyautogui.press('tab')  # Pressiona Tab para ir para o próximo campo
-    sleep(1.5)
-
+    # custo
     custo = table.loc[line, 'custo']
     pyautogui.write(str(custo))  # Digita o custo do produto
     pyautogui.press('tab')  # Pressiona Tab para ir para o próximo campo
-    sleep(1.5)
-
+    # obs
     obs = table.loc[line, 'obs']
     pyautogui.write(str(obs))  # Digita a observação do produto (vazio)
     pyautogui.press('tab')  # Pressiona Tab para ir para o próximo campo
-    sleep(1.5)
+    
     pyautogui.press('enter')  # Pressiona Enter para cadastrar o produto
     
     pyautogui.scroll(600)  # Rola a tela para baixo para visualizar o próximo produto
