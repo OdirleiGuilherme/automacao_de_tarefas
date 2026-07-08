@@ -1,5 +1,6 @@
 import pyautogui
 from time import sleep
+import pandas as pd
 
 pyautogui.PAUSE = 1.5
 
