@@ -8,8 +8,6 @@ pyautogui.PAUSE = 1.5
 link = 'https://dlp.hashtagtreinamentos.com/python/intensivao/login'
 email = 'odirlei_007@hotmail.com'
 password = '12345678'
-table = pd.read_csv('produtos.csv')
-print(table)
 
 pyautogui.press('win')  # Pressiona a tecla Windows
 pyautogui.write('edge')  # Digita "Edge" para abrir o navegador
@@ -28,4 +26,32 @@ pyautogui.press('tab')  # Pressiona a tecla Tab para ir para o campo de senha
 pyautogui.write(password)  # Digita a senha
 pyautogui.press('enter')  # Pressiona Enter para fazer login
 
- 
+table = pd.read_csv('produtos.csv')
+
+pyautogui.click(x=1811, y=249)  # Clica no botão "Cadastrar Produto"
+pyautogui.write("MOLO000251")  # Digita o código do produto
+pyautogui.press('tab')  # Pressiona Tab para ir para o próximo campo
+sleep(3)
+
+pyautogui.write("Logitech")  # Digita a marca do produto
+pyautogui.press('tab')  # Pressiona Tab para ir para o próximo campo
+sleep(3)
+
+pyautogui.write("Mouse")  # Digita o tipo do produto
+pyautogui.press('tab')  # Pressiona Tab para ir para o próximo campo
+sleep(3)
+
+pyautogui.write("1")  # Digita a categoria do produto
+pyautogui.press('tab')  # Pressiona Tab para ir para o próximo campo
+sleep(3)
+
+pyautogui.write("25.95")  # Digita o preço unitário do produto
+pyautogui.press('tab')  # Pressiona Tab para ir para o próximo campo
+sleep(3)
+
+pyautogui.write("6.5")  # Digita o custo do produto
+pyautogui.press('tab')  # Pressiona Tab para ir para o próximo campo
+sleep(3)
+
+pyautogui.write("")  # Digita a observação do produto (vazio)
+pyautogui.press('enter')  # Pressiona Enter para cadastrar o produto
