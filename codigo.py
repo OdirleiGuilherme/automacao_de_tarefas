@@ -9,6 +9,10 @@
 # Passo 2: Fazer Login
     # criar uma variável para armazenar link do site
          #link = https://dlp.hashtagtreinamentos.com/python/intensivao/login
+         # press('enter')  # Pressiona Enter para acessar o site
+    
+    # import biblioteca time
+            # sleep(3)  # Aguarda 3 segundos para o site carregar
     #
 
 # Passo 3: abrir a base de dados

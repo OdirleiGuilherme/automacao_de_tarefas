@@ -13,3 +13,5 @@ pyautogui.write(link)  # Digita o link do site
 pyautogui.press('enter')  # Pressiona Enter para acessar o site
 
 sleep(3)  # Aguarda 3 segundos para o site carregar
+
+pyautogui.click()
