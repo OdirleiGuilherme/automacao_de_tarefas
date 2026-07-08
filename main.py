@@ -1,4 +1,5 @@
 import pyautogui
+from time import sleep
 
 pyautogui.PAUSE = 1.5
 
@@ -10,3 +11,5 @@ pyautogui.press('enter')  # Pressiona Enter para abrir o Edge
 
 pyautogui.write(link)  # Digita o link do site
 pyautogui.press('enter')  # Pressiona Enter para acessar o site
+
+sleep(3)  # Aguarda 3 segundos para o site carregar
