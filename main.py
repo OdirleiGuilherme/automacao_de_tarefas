@@ -2,12 +2,16 @@ import pyautogui
 from time import sleep
 import pandas as pd
 import numpy as np
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
 
 pyautogui.PAUSE = 1.5
 
-link = 'https://dlp.hashtagtreinamentos.com/python/intensivao/login'
-email = 'teste.teste@hotmail.com'
-password = '987654'
+link = os.getenv('link')
+email = os.getenv('email')
+password = os.getenv('password')
 
 pyautogui.press('win')  # Pressiona a tecla Windows
 pyautogui.write('edge')  # Digita "Edge" para abrir o navegador
