@@ -1,14 +1,13 @@
 import pyautogui
+import os
 from time import sleep
 import pandas as pd
 import numpy as np
 from dotenv import load_dotenv
-import os
-
-load_dotenv()
 
 pyautogui.PAUSE = 1.5
 
+load_dotenv('credenciais.env')
 link = os.getenv('link')
 email = os.getenv('email')
 password = os.getenv('password')

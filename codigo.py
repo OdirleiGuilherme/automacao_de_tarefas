@@ -8,9 +8,10 @@
 
 # Passo 2: Fazer Login
     # criar uma variável para armazenar link do site
-         #link = https://dlp.hashtagtreinamentos.com/python/intensivao/login
+         #link = https://dlp.hashtagtreinamentos.com/python/intensi
+         # vao/login
          # press('enter')  # Pressiona Enter para acessar o site
-    
+  
     # import biblioteca time
             # sleep(3)  # Aguarda 3 segundos para o site carregar
     #
@@ -31,3 +32,4 @@
 # 2    CAHA000251     Hashtag      Camisa          1           25.00       11.0              NaN
 # 3    CAHA000252     Hashtag      Camisa          2           25.00       11.0              Conferir estoque
 # 4    MOMU000111    Multilaser       Mouse        1           11.99       3.4               NaN
+
