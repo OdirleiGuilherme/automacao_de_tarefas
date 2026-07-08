@@ -1,12 +1,15 @@
 import pyautogui
 from time import sleep
 import pandas as pd
+import numpy as np
 
 pyautogui.PAUSE = 1.5
 
 link = 'https://dlp.hashtagtreinamentos.com/python/intensivao/login'
 email = 'odirlei_007@hotmail.com'
 password = '12345678'
+table = pd.read_csv('produtos.csv')
+print(table)
 
 pyautogui.press('win')  # Pressiona a tecla Windows
 pyautogui.write('edge')  # Digita "Edge" para abrir o navegador
