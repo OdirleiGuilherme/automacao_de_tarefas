@@ -18,40 +18,43 @@ pyautogui.press('enter')  # Pressiona Enter para acessar o site
 
 sleep(3)  # Aguarda 3 segundos para o site carregar
 
-pyautogui.click(x= 1751, y =367)  # Clica no campo de login
-pyautogui.write(email)  # Digita o nome de usuário
-
-pyautogui.press('tab')  # Pressiona a tecla Tab para ir para o campo de senha
-
-pyautogui.write(password)  # Digita a senha
-pyautogui.press('enter')  # Pressiona Enter para fazer login
-
 table = pd.read_csv('produtos.csv')
 
-pyautogui.click(x=1811, y=249)  # Clica no botão "Cadastrar Produto"
-pyautogui.write("MOLO000251")  # Digita o código do produto
-pyautogui.press('tab')  # Pressiona Tab para ir para o próximo campo
-sleep(3)
+for line in table.index:
+    pyautogui.click(x= 1751, y =367)  # Clica no campo de login
+    pyautogui.write(email)  # Digita o nome de usuário
 
-pyautogui.write("Logitech")  # Digita a marca do produto
-pyautogui.press('tab')  # Pressiona Tab para ir para o próximo campo
-sleep(3)
+    pyautogui.press('tab')  # Pressiona a tecla Tab para ir para o campo de senha
 
-pyautogui.write("Mouse")  # Digita o tipo do produto
-pyautogui.press('tab')  # Pressiona Tab para ir para o próximo campo
-sleep(3)
+    pyautogui.write(password)  # Digita a senha
+    pyautogui.press('enter')  # Pressiona Enter para fazer login
 
-pyautogui.write("1")  # Digita a categoria do produto
-pyautogui.press('tab')  # Pressiona Tab para ir para o próximo campo
-sleep(3)
+    pyautogui.click(x=1811, y=249)  # Clica no botão "Cadastrar Produto"
+    pyautogui.write("MOLO000251")  # Digita o código do produto
+    pyautogui.press('tab')  # Pressiona Tab para ir para o próximo campo
+    sleep(2)
 
-pyautogui.write("25.95")  # Digita o preço unitário do produto
-pyautogui.press('tab')  # Pressiona Tab para ir para o próximo campo
-sleep(3)
+    pyautogui.write("Logitech")  # Digita a marca do produto
+    pyautogui.press('tab')  # Pressiona Tab para ir para o próximo campo
+    sleep(2)
 
-pyautogui.write("6.5")  # Digita o custo do produto
-pyautogui.press('tab')  # Pressiona Tab para ir para o próximo campo
-sleep(3)
+    pyautogui.write("Mouse")  # Digita o tipo do produto
+    pyautogui.press('tab')  # Pressiona Tab para ir para o próximo campo
+    sleep(2)
 
-pyautogui.write("")  # Digita a observação do produto (vazio)
-pyautogui.press('enter')  # Pressiona Enter para cadastrar o produto
+    pyautogui.write("1")  # Digita a categoria do produto
+    pyautogui.press('tab')  # Pressiona Tab para ir para o próximo campo
+    sleep(2)
+
+    pyautogui.write("25.95")  # Digita o preço unitário do produto
+    pyautogui.press('tab')  # Pressiona Tab para ir para o próximo campo
+    sleep(2)
+
+    pyautogui.write("6.5")  # Digita o custo do produto
+    pyautogui.press('tab')  # Pressiona Tab para ir para o próximo campo
+    sleep(2)
+
+    pyautogui.write("obs")  # Digita a observação do produto (vazio)
+    pyautogui.press('tab')  # Pressiona Tab para ir para o próximo campo
+    sleep(2)
+    pyautogui.press('enter')  # Pressiona Enter para cadastrar o produto
