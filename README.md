@@ -13,7 +13,7 @@ A aplicação abre o Microsoft Edge, acessa o sistema, realiza o login utilizand
 - Leitura de dados do arquivo `produtos.csv`;
 - Cadastro automático de produtos;
 - Preenchimento automático dos campos do formulário;
-- Suporte à interrupção da automação por meio da tecla `Esc`;
+- Suporte à interrupção da automação levando o mouse ao canto superior esquerdo da tela;
 - Rolagem automática da página para continuidade do cadastro.
 
 ---
@@ -25,7 +25,7 @@ A aplicação abre o Microsoft Edge, acessa o sistema, realiza o login utilizand
 - Pandas
 - NumPy
 - python-dotenv
-- Keyboard
+
 
 ---
 
@@ -115,18 +115,16 @@ O programa irá:
 
 O arquivo `produtos.csv` deve conter as seguintes colunas:
 
-| codigo | marca | tipo | categoria | preco_unitario | custo | obs |
-|---------|-------|------|-----------|----------------|-------|-----|
-| 001 | Samsung | TV | Eletrônicos | 2500 | 1800 | Smart TV |
-| 002 | Dell | Notebook | Informática | 4500 | 3800 | |
+| codigo | marca   | tipo | categoria   | preco_unitario | custo |   obs    |
+|--------|---------|------|-------------|----------------|-------|----------|
+|   001  | Samsung | TV   | Eletrônicos |      2500      | 1800  | estoque  |
+|   002  |  Dell   |Laptop| Informática |      4500      | 3800  |  NaN     |
 
 ---
 
 ## ⌨️ Interrompendo a Automação
 
-Durante a execução, é possível interromper a automação pressionando a tecla **Esc**.
-
-Também é possível utilizar o recurso de segurança do PyAutoGUI movendo o cursor do mouse rapidamente para um dos cantos da tela, caso `pyautogui.FAILSAFE` esteja habilitado.
+Durante a execução, é possível interromper a automação utilizando o recurso de segurança do PyAutoGUI movendo o cursor do mouse rapidamente para um dos cantos da tela, caso `pyautogui.FAILSAFE` esteja habilitado.
 
 ---
 
@@ -163,6 +161,7 @@ Este projeto foi desenvolvido com o objetivo de praticar:
 - [ ] Adicionar logs de execução.
 - [ ] Implementar tratamento de exceções.
 - [ ] Gerar relatório dos produtos cadastrados.
+- [ ] Adicionar parada de automação com biblioteca keyboard.
 
 ---
 
