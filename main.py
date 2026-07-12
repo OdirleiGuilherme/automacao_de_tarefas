@@ -4,11 +4,10 @@ from time import sleep
 import pandas as pd
 import numpy as np
 from dotenv import load_dotenv
-from keyboard import is_pressed
 
 pyautogui.PAUSE = 1.5
 
-load_dotenv('credenciais.env')
+load_dotenv ('credenciais.env')
 link = os.getenv('link')
 email = os.getenv('email')
 password = os.getenv('password')
@@ -23,7 +22,6 @@ pyautogui.press('enter')  # Pressiona Enter para acessar o site
 
 sleep(3)  # Aguarda 3 segundos para o site carregar
 
-
 pyautogui.click(x= 1751, y =367)  # Clica no campo de login
 pyautogui.write(email)  # Digita o nome de usuário
 
@@ -35,11 +33,6 @@ pyautogui.press('enter')  # Pressiona Enter para fazer login
 table = pd.read_csv('produtos.csv')
 
 for line in table.index:
-    
-    if keyboard.is_pressed('esc'):
-        print("Programa interrompido pelo usuário.")
-        break
-
     pyautogui.click(x=1811, y=249)  # Clica no botão "Cadastrar Código"
     # código
     codigo = table.loc[line, 'codigo']
