@@ -8,9 +8,9 @@
 
 # Passo 2: Fazer Login
     # criar uma variável para armazenar link do site
-         #link = https://dlp.hashtagtreinamentos.com/python/intensi
-         # vao/login
+         #link = https://dlp.hashtagtreinamentos.com/python/intensivao/login
          # press('enter')  # Pressiona Enter para acessar o site
+         # aplicar pyautogui.click(x= 1751, y =367)  # Clica no campo de login
   
     # import biblioteca time
             # sleep(3)  # Aguarda 3 segundos para o site carregar
