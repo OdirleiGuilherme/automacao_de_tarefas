@@ -11,6 +11,7 @@
          #link = https://dlp.hashtagtreinamentos.com/python/intensivao/login
          # press('enter')  # Pressiona Enter para acessar o site
          # aplicar pyautogui.click(x= 1751, y =367)  # Clica no campo de login
+         #aplicar pyautogui.write('digitar login')  # Digita o nome de usuário
   
     # import biblioteca time
             # sleep(3)  # Aguarda 3 segundos para o site carregar
